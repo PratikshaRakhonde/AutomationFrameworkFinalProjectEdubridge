@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Final Project  Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.SearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifySearchWithoutAnyProduct"/>
+          <include name="verifySearchWithInvalidProduct"/>
+          <include name="tearDown"/>
+          <include name="verifySearchWithValidProduct"/>
+        </methods>
+      </class> <!-- com.TestCases.SearchTest -->
+      <class name="com.TestCases.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.TestCases.LoginTest -->
+      <class name="com.TestCases.RegisterTest">
+        <methods>
+          <include name="verifyRegisteringAccountWithExistingEmailAddress"/>
+          <include name="tearDown"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
+          <include name="verifyRegisteringAccountWithoutFillingAnyDetails"/>
+          <include name="setup"/>
+          <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
+        </methods>
+      </class> <!-- com.TestCases.RegisterTest -->
+    </classes>
+  </test> <!-- Final Project  Test Cases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
